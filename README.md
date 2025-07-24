@@ -1,11 +1,10 @@
-# DEM\_API: CRUD de SampleData con FastAPI y PostgreSQL
+# Actividad 2: API
 
 Este proyecto ofrece una API REST para gestionar registros de muestra (`SampleData`) utilizando **FastAPI**, **SQLAlchemy** y **PostgreSQL**.
 
 ## 📋 Requisitos Previos
 
 * **Docker** y **Docker Compose** (versión 3.8+).
-* **Python 3.11** (si deseas ejecutar localmente sin Docker).
 
 ## 🗂️ Estructura del proyecto
 
