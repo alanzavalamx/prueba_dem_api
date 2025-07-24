@@ -1,0 +1,12 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+COPY api/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY ingest/load_sample.py ./
+COPY data/sample.csv /data/
+COPY api/ ./
+
+CMD ["bash", "-c", "python load_sample.py && uvicorn main:app --host 0.0.0.0 --port 8000"]
+
