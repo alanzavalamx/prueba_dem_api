@@ -4,12 +4,14 @@ Este proyecto ofrece una API REST para gestionar registros de muestra (`SampleDa
 
 ## 📋 Requisitos Previos
 
-* **Docker** y **Docker Compose** (versión 3.8+).
+* **Docker** (>=20.10) (https://docs.docker.com/desktop/setup/install/windows-install/)
+* **Docker Compose** (>=1.29)
+* Git https://git-scm.com/downloads (o puedes descargar directmente el repositorio)
 
 ## 🗂️ Estructura del proyecto
 
 ```
-DEM_api/
+.
 ├── Dockerfile_api             # Imagen Docker para la API
 ├── docker-compose.yml         # Orquestación de servicios (API + PostgreSQL)
 ├── db/
